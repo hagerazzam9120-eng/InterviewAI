@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تسجيل الدخول | InterviewAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site/style/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="site/index.html">🎯 Interview<b>AI</b></a>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <h1>تسجيل الدخول</h1>
+      <p>أهلًا بيك تاني، كمّل تدريبك</p>
+    </section>
+
+    <form class="card auth-card" id="auth-form" data-mode="login" novalidate>
+      <div class="field">
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="password">كلمة المرور</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <div id="auth-error" class="alert error hidden" role="alert"></div>
+      <button type="submit" class="btn block" id="auth-submit">دخول</button>
+      <p class="switch-link">مفيش حساب؟ <a href="site/register.html">أنشئ حساب جديد</a></p>
+    </form>
+  </main>
+
+  <footer class="footer">InterviewAI © 2026 | تدرّب قبل ما تدخل</footer>
+  <script src="site/js/main.js"></script>
+  <script src="site/js/auth.js"></script>
+</body>
+</html>
